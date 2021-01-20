@@ -58,19 +58,3 @@ If there are no two tokens to the left (or right) because of sentence boundaries
 
 ## Step 5
 Commit your program to the repository and push it to the repository.
-
-
-## Useful links
-
-- [Apache Maven](http://maven.apache.org)
-
-- [Apache UIMA](https://uima.apache.org)
-     - [Overview & Setup](https://uima.apache.org/d/uimaj-current/overview_and_setup.html)
-     - [Tutorial & Developers Guide](https://uima.apache.org/d/uimaj-current/tutorials_and_users_guides.html)
-     - [Tools Guide and Reference](https://uima.apache.org/d/uimaj-current/tools.html)
-     - [References](https://uima.apache.org/d/uimaj-current/references.html)
-- [UIMA Javadoc](https://javadoc.io/doc/org.apache.uima/uimaj-core/latest/index.html)
-- [UIMAfit Javadoc](https://javadoc.io/doc/org.apache.uima/uimafit-core/latest/index.html)
-
-- [DKPro core](https://dkpro.github.io/dkpro-core/)
-- 

@@ -36,10 +36,13 @@ public class Exercise10Main {
 		// initialize output writer
 		AnalysisEngineDescription writer = AnalysisEngineFactory.createEngineDescription(Conll2002Writer.class,
 				Conll2002Writer.PARAM_TARGET_LOCATION, "target", Conll2002Writer.PARAM_OVERWRITE, true);
-
+		
+		//Aufgabe 10 
+		//Exercise10Writer neprocessor = new Exercise10Writer();
 		// run the pipeline
 		SimplePipeline.runPipeline(readerDescription, tokenizer, neTagger, writer);
 
+		
 	}
 
 }

@@ -33,12 +33,15 @@ public class Exercise10Main {
 		AnalysisEngineDescription neTagger = AnalysisEngineFactory
 				.createEngineDescription(StanfordNamedEntityRecognizer.class);
 
+		AnalysisEngineDescription neWriter = AnalysisEngineFactory
+				.createEngineDescription(Exercise10Writer.class);
+
 		// initialize output writer
 		AnalysisEngineDescription writer = AnalysisEngineFactory.createEngineDescription(Conll2002Writer.class,
 				Conll2002Writer.PARAM_TARGET_LOCATION, "target", Conll2002Writer.PARAM_OVERWRITE, true);
 
 		// run the pipeline
-		SimplePipeline.runPipeline(readerDescription, tokenizer, neTagger, writer);
+		SimplePipeline.runPipeline(readerDescription, tokenizer, neTagger, writer, neWriter);
 
 	}
 

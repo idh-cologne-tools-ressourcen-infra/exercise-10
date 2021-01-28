@@ -37,8 +37,11 @@ public class Exercise10Main {
 		AnalysisEngineDescription writer = AnalysisEngineFactory.createEngineDescription(Conll2002Writer.class,
 				Conll2002Writer.PARAM_TARGET_LOCATION, "target", Conll2002Writer.PARAM_OVERWRITE, true);
 
+		// Exercise 10 writer
+		AnalysisEngineDescription ex10writer = AnalysisEngineFactory.createEngineDescription(Exercise10Writer.class);
+
 		// run the pipeline
-		SimplePipeline.runPipeline(readerDescription, tokenizer, neTagger, writer);
+		SimplePipeline.runPipeline(readerDescription, tokenizer, neTagger, writer, ex10writer);
 
 	}
 

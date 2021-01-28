@@ -34,7 +34,8 @@ public class Exercise10Main {
 				.createEngineDescription(StanfordNamedEntityRecognizer.class);
 
 		AnalysisEngineDescription neWriter = AnalysisEngineFactory
-				.createEngineDescription(Exercise10Writer.class);
+				.createEngineDescription(Exercise10Writer.class,
+						Exercise10Writer.PARAM_TARGET_LOCATION, "target");
 
 		// initialize output writer
 		AnalysisEngineDescription writer = AnalysisEngineFactory.createEngineDescription(Conll2002Writer.class,

@@ -42,7 +42,7 @@ public class Exercise10Main {
 		
 		// run the pipeline
 		SimplePipeline.runPipeline(readerDescription, tokenizer, neTagger, writer, NEWriter);
-
+		System.out.println("finished");
 	}
 
 }

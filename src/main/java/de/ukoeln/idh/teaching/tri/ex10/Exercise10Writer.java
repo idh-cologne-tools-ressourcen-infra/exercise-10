@@ -21,6 +21,7 @@ public class Exercise10Writer extends JCasFileWriter_ImplBase {
 
 			for (NamedEntity ne : jcas.select(NamedEntity.class)) {
 				osw.write(ne.getCoveredText());
+				osw.write(' ');
 			}
 			
 			osw.flush();
